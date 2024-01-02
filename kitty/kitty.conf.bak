@@ -1,0 +1,58 @@
+# theme settings
+# kitty +kitten themes
+# rm -rf ~/.config/kitty/theme.conf
+
+# ln -s ~/.config/kitty/kitty-themes/themes/3024_Day.conf ~/.config/kitty/theme.conf
+
+# Open text files without fragments in the editor
+# protocol file
+# mime text/*
+# action launch --type=os-window $EDITOR $FILE_PATH
+
+# # Open image files with icat
+# protocol file
+# mime image/*
+# action launch --type=os-window kitty +kitten icat --hold $FILE_PATH
+
+# System settings
+# macos_titlebar_color background
+tab_bar_style fade
+window_border_width 2
+window_padding_width 10
+initial_window_width 640
+initial_window_height 360
+enable_audio_bell yes
+tab_bar_edge top
+cursor_blink_interval 0
+# active_border_color #00ff00
+remember_window_size no
+copy_on_select yes
+shell_integration enabled
+# macos_titlebar_color  #ff0000
+# titlebar_color only works with dynamic_background_opacity 1
+background_opacity 1.0 
+dynamic_background_opacity no
+url_style curly
+open_url_with default
+detect_urls yes
+
+# font settings
+
+font_family Hack
+bold_font auto
+italic_font auto
+bold_italic_font auto
+font_size 14.0
+adjust_line_height 175%
+
+# macos settings
+# macos_titlebar_color 	system
+map cmd+c copy_to_clipboard
+map cmd+v paste_from_clipboard
+
+#include ./theme.conf
+
+# BEGIN_KITTY_THEME
+# 1984 Light
+include current-theme.conf
+# END_KITTY_THEME
