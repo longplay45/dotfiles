@@ -1,11 +1,16 @@
 # Set the PATH to include /usr/local/bin and $PATH
 export PATH="/usr/local/bin:$PATH"
+DYLD_LIBRARY_PATH=$HOME/local/lib:/usr/local/lib
+export DYLD_LIBRARY_PATH
+
+DYLD_FALLBACK_LIBRARY_PATH=/opt/local/lib:/usr/lib
+export DYLD_FALLBACK_LIBRARY_PATH
 
 # Set the ZSH path
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set DYLD_LIBRARY_PATH for SQLite and other paths related to SQLite
-export DYLD_LIBRARY_PATH="/opt/homebrew/Cellar/sqlite/3.43.0/lib/:/usr/lib"
+export DYLD_LIBRARY_PATH="/opt/homebrew/Cellar/sqlite/3.45.0/lib:/usr/lib"
 
 # Set PKG_CONFIG_PATH for Homebrew SQLite
 export PKG_CONFIG_PATH="/opt/homebrew/opt/sqlite/lib/pkgconfig"
@@ -53,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 alias blender="/Applications/Blender.app/Contents/MacOS/Blender"
 alias ea="conda activate "
 alias ed="conda deactivate "
-alias edit_dotfiles="code $HOME/Docs/Cloud/Dev/dotfiles/"
+alias edit_dotfiles="cd $HOME/Docs/Cloud/Dev/dotfiles/ && code ."
 alias cdm="cd /Volumes/MOVIES/sort"
 alias cdb="source $HOME/Docs/Cloud/Dev/dotfiles/sh/cdb.sh"
 alias cdd="source $HOME/Docs/Cloud/Dev/dotfiles/sh/cdd.sh"
@@ -62,6 +67,7 @@ alias chad="source $HOME/Docs/Cloud/Dev/dotfiles/sh/chad.sh"
 alias create_icons="source $HOME/Docs/Cloud/Dev/dotfiles/sh/create_icons.sh"
 alias cleanup="python3 $HOME/Docs/Cloud/Dev/dotfiles/sh/cleanup.py"
 alias cpp="pwd|pbcopy"  # Copy current path to clipboard
+alias dev="cd $HOME/Docs/Dev"
 alias gcl='git clone'
 alias greep='greep --color=auto'
 alias h='history'
