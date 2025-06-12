@@ -1,0 +1,14 @@
+# Backup-Dateien
+*~
+*.swp
+*.bak
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Python-Umgebungen (falls Skripte enthalten)
+.venv/
+__pycache__/
