@@ -6,6 +6,8 @@
 # Aliases
 # ----------------------------
 # Define command shortcuts
+
+alias backup="/Users/i/Docs/Cloud/Dev/dotfiles/sh/backup_mp3_demos.sh"
 alias blender="/Applications/Blender.app/Contents/MacOS/Blender"
 alias edit_dotfiles="cd $HOME/Docs/Cloud/Dev/dotfiles/ && code ."
 alias cdm="cd /Volumes/MOVIES/sort"
@@ -107,7 +109,8 @@ check_directory_for_new_repository() {
 # ----------------------------
 # Extend cd to activate virtualenv and show git info automatically
 cd() {
-  builtin cd "$@" && auto_activate_venv && check_directory_for_new_repository
+  # builtin cd "$@" && auto_activate_venv && check_directory_for_new_repository
+  builtin cd "$@" && check_directory_for_new_repository
 }
 
 # ----------------------------
