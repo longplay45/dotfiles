@@ -7,7 +7,7 @@
 # ----------------------------
 # Define command shortcuts
 
-alias backup="/Users/i/Docs/Cloud/Dev/dotfiles/sh/backup_mp3_demos.sh"
+alias backup_demos="/Users/i/Docs/Cloud/Dev/dotfiles/sh/backup_demos.sh"
 alias blender="/Applications/Blender.app/Contents/MacOS/Blender"
 alias edit_dotfiles="cd $HOME/Docs/Cloud/Dev/dotfiles/ && code ."
 alias cdm="cd /Volumes/MOVIES/sort"
