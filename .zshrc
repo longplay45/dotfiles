@@ -54,6 +54,12 @@ export LANG="en_US.UTF-8"
 # Oh My Zsh path
 export ZSH="$HOME/.oh-my-zsh"
 
+# Prompt settings
+autoload -Uz colors && colors
+
+PROMPT='%F{magenta}%~%f
+%(!.%F{red}.%F{cyan})%n@%m: %% '
+
 # ----------------------------
 # Oh My Zsh Plugins
 # ----------------------------
