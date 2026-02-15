@@ -85,6 +85,9 @@ plugins=(
   zsh-syntax-highlighting
 )
 
+# Dim italic (clean + modern)
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#a0a0a0'
+
 source "$ZSH/oh-my-zsh.sh"
 
 
