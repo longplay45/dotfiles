@@ -13,4 +13,4 @@ link() {
 link "$DOT/tmux/.tmux.conf"          "$HOME/.tmux.conf"
 link "$DOT/zsh/.zshrc"               "$HOME/.zshrc"
 link "$DOT/zsh/.zprofile"            "$HOME/.zprofile"
-link "$DOT/kitty/.config/kitty"      "$HOME/.config/kitty"
+link "$DOT/kitty/"                   "$HOME/.config/kitty"
