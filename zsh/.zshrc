@@ -167,7 +167,7 @@ status_prompt() {
 }
 
 PROMPT='%F{magenta}%~%f${vcs_info_msg_0_}$(venv_prompt)$(status_prompt)
-%F{cyan}❯%f '
+%F{green}%m%f %F{cyan}❯%f '
 
 
 # ----------------------------
@@ -175,3 +175,5 @@ PROMPT='%F{magenta}%~%f${vcs_info_msg_0_}$(venv_prompt)$(status_prompt)
 # ----------------------------
 print -r -- "  🚀 ..."
 print -r -- ""
+
+alias claude-mem='/Users/i/.bun/bin/bun "/Users/i/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
